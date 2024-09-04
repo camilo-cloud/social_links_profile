@@ -31,10 +31,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 35px 30px 40px 30px;
-    gap: 12px;
-    width: 22rem; /*To prevent it from getting too wide on larger screens */
-
+    padding: 34px 29px 39px 29px; /* Reduce padding slightly */
+    gap: 11.64px; /* Approx. 3% reduction from 12px */
+    width: 21.34rem; /* Reduce width by 3% from 22rem */
 }
 .top__card{
     display: flex;
