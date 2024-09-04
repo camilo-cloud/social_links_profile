@@ -1,0 +1,103 @@
+:root{
+    --green-color:hsl(75, 94%, 57%);
+    --white-color:hsl(0, 0%, 100%);
+    --grey-700:hsl(0, 0%, 20%);
+    --grey-800:hsl(0, 0%, 12%);
+    --grey-900:hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /*to ensure the container doesn't touch the edges on small screens*/
+    text-align: center;
+}
+.container{
+    background-color: var(--grey-800);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 30px 40px 30px;
+    gap: 12px;
+    width: 22rem; /*To prevent it from getting too wide on larger screens */
+
+}
+.top__card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 15px;
+    padding-bottom: 5px;
+    
+}
+.profile{
+    margin-bottom: 10px;
+}
+.profile img{
+    display: block;
+    max-width: 100%; /*prevents it from overflowing its container*/
+    border-radius: 50%;
+    width: 5rem; /* 90px equivale a 5.625rem cuando 1rem = 16px */
+    height: 5rem;
+
+}
+.name{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.ubication{
+    color: var(--green-color);
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: -7px;
+}
+.description{
+    color:var(--white-color);
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 14px;
+    width: 95%;
+    
+}
+.link{
+    background-color: var(--grey-700);
+    height: 2.5rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.link:hover{
+    background-color: var(--green-color);
+    color: var(--grey-900);
+    font-weight: bold;
+}
+@media (max-width: 400px) {
+    .container{
+        width: 20rem;
+    }
+}
